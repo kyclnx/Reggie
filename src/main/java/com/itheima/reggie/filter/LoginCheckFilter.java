@@ -31,7 +31,8 @@ public class LoginCheckFilter implements Filter {
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
-                "/front/**"
+                "/front/**",
+                "/common/**"
         };
         //2、判断本次请求是否需要进行处理(其实就是检查登录的状态)
         boolean check = check(urls, requestURI);
